@@ -3,11 +3,6 @@ pipeline:
     image: node:19
     commands:
       - npm install --global standard-version
-      - |
-        if [[ $(git tag) -ne 0 ]]; then
-          standard-version
-        else
-          standard-version --first-release
-        fi
+      - standard-version
 
 branches: main
