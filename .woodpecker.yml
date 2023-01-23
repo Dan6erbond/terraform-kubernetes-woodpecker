@@ -2,7 +2,7 @@ pipeline:
   conventional_commits:
     image: node:18
     commands:
-      - echo "test" >> test.txt
+      - git config --list
       - npm i -g standard-version
       - standard-version
       - git tag
