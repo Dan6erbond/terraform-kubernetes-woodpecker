@@ -4,5 +4,6 @@ pipeline:
     commands:
       - npm install --global standard-version
       - standard-version
+      - git tag
 
 branches: main
