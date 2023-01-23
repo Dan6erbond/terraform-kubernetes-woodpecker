@@ -2,7 +2,7 @@ pipeline:
   conventional_commits:
     image: node:19
     commands:
-      - npx standard-version
+      - npx standard-version --dry-run
       - git tag
 
 branches: main
