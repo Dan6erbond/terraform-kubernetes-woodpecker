@@ -2,8 +2,8 @@ pipeline:
   conventional_commits:
     image: node:18
     commands:
-      - bash
-      - npx standard-version
+      - npm i -g standard-version
+      - standard-version
       - git tag
 
 branches: main
