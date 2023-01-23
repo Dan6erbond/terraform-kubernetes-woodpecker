@@ -2,7 +2,8 @@ pipeline:
   conventional_commits:
     image: node:18
     commands:
-      - git config --list
+      - git config --global user.email "moravrav@gmail.com"
+      - git config --global user.name "RaviAnand Mohabir"
       - npm i -g standard-version
       - standard-version
       - git tag
