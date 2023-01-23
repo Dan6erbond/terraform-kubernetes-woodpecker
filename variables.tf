@@ -74,6 +74,12 @@ variable "woodpecker_open" {
   default     = true
 }
 
+variable "woodpecker_orgs" {
+  description = "Comma-delimited list of organizations granted to use Woodpecker"
+  type        = string
+  default     = ""
+}
+
 variable "woodpecker_gitea" {
   description = "Enable Woodpecker Gitea integration"
   type        = bool

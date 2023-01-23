@@ -285,6 +285,7 @@ resource "kubernetes_config_map" "woodpecker_server" {
     WOODPECKER_ADMIN           = var.woodpecker_admin
     WOODPECKER_HOST            = var.woodpecker_host
     WOODPECKER_OPEN            = var.woodpecker_open
+    WOODPECKER_ORGS            = var.woodpecker_orgs
     WOODPECKER_GITEA           = var.woodpecker_gitea
     WOODPECKER_GITEA_URL       = var.woodpecker_gitea_url
     WOODPECKER_GITEA_CLIENT    = var.woodpecker_gitea_client
