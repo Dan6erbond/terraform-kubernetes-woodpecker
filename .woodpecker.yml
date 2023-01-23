@@ -1,0 +1,12 @@
+pipeline:
+  conventional_commits:
+    image: node:18
+    commands:
+      - git config --global user.email "moravrav@gmail.com"
+      - git config --global user.name "RaviAnand Mohabir"
+      - git config --global url."https://$GIT_USERNAME:$GIT_TOKEN@gitea.ravianand.me/".insteadOf "https://gitea.ravianand.me/"
+      - npm i -g standard-version
+      - standard-version
+      - git push origin $(git tag | tail -1)
+
+branches: main
