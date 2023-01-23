@@ -1,0 +1,6 @@
+pipeline:
+  conventional_commits:
+    image: node:19
+    commands:
+      - npm install --global standard-version
+      - standard-version --dry-run
