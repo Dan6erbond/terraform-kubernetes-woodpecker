@@ -1,20 +1,8 @@
 terraform {
   required_providers {
-    authentik = {
-      source  = "goauthentik/authentik"
-      version = "2022.8.1"
-    }
     kubernetes = {
       source  = "hashicorp/kubernetes"
       version = "2.13.1"
-    }
-    postgresql = {
-      source  = "cyrilgdn/postgresql"
-      version = "1.17.1"
-    }
-    minio = {
-      source  = "aminueza/minio"
-      version = "1.10.0"
     }
   }
 }
